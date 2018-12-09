@@ -43,6 +43,4 @@ echo "Duplicate freq: " . $current_freq . "\n";
 echo "Iterations: " . $iterations . "\n";
 echo "Execution time: " . $elapsed . $unit . "\n";
 
-var_dump($freqs_calculated);
-
 //var_dump($freqs);
