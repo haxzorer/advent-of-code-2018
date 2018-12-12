@@ -57,10 +57,13 @@ func main() {
 	start := time.Now()
 
 	input := convertInput(getInput())
+	startCalc := time.Now()
 	iterations, duplicateFreq := loopUntilDuplicate(input)
+	elapsedCalc := time.Since(startCalc)
 	elapsed := time.Since(start)
 
 	fmt.Printf("Duplicate: %d\n", duplicateFreq)
 	fmt.Printf("Iterations: %d\n", iterations)
 	fmt.Printf("Execution time: %s\n", elapsed)
+	fmt.Printf("Calculation time: %s\n", elapsedCalc)
 }
